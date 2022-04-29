@@ -1,5 +1,7 @@
 # Javascript Web App Sample
 
+Updated to run a devops pipeline after authentication .
+
 For javascript web applications that want access to resources like Azure DevOps REST API, they will have to support an authentication flow for their users. The [Microsoft Authentication Library for JavaScript](https://github.com/AzureAD/microsoft-authentication-library-for-js) (MSAL.js) enables javascript application developers to setup interactive authentication flows and obtain access tokens for API usage.
 
 ## Sample Application
