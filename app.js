@@ -118,7 +118,7 @@ function getTokenRedirect(request) {
 function passTokenToApi() {
     getTokenRedirect(tokenRequest)
         .then(response => {
-            callApiWithToken("https://dev.azure.com/simonparkinson27/setup k8/_apis/pipelines/" + branchID.value + "/runs?api-version=6.0-preview.1", response.accessToken);
+            callApiWithToken("https://dev.azure.com/<projectname>/setup k8/_apis/pipelines/" + branchID.value + "/runs?api-version=6.0-preview.1", response.accessToken);
             //callApiWithToken(apiConfig.endpoint, response.accessToken);
         }).catch(error => {
             console.error(error);
